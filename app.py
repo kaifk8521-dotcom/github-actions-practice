@@ -1,5 +1,5 @@
 # Flask App
-# To test Auto Linter
+# To test Auto Linter if it's working or not.
 from flask import Flask, render_template
 app = Flask(__name__)
 
