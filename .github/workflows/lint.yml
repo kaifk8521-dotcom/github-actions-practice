@@ -5,7 +5,7 @@ name: Auto Linter
 
 on:
   push:
-    paths: "*.py"
+    paths: "**.py"
 
 jobs:
   code-linting:
@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v7
       # this step will install python
       - name: Set up python
-        uses: actions/checkout@v7
+        uses: actions/setup-python@v6
         with:
           python-version: '3.13'
       # this step will install the linting tool
